@@ -35,3 +35,12 @@ The agent:
 ## 📜 Observability & Rationality
 - Every agent decision is logged with user ID, transaction ID, reason, and timestamp
 - System rules are transparent and modular for auditing
+
+- ### Identity Governance (PBAC)
+
+This system simulates identity-based access control using user roles:
+
+- **Regular users** are fully governed by policy-based rules. If a transaction is high risk, they cannot bypass block or flag actions.
+- **Reviewers** (compliance officers) have elevated access scopes and can override system decisions, representing manual exception handling.
+
+This identity governance enforces autonomy boundaries while preserving human-in-the-loop control.
