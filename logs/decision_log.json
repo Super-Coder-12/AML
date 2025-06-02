@@ -1,0 +1,35 @@
+[
+  {
+    "timestamp": "2025-06-01T21:32:00Z",
+    "user_id": "u001",
+    "tx_id": "txn1001",
+    "risk_score": 0.9,
+    "country": "CN",
+    "amount": 12000,
+    "is_pep": false,
+    "action": "block",
+    "rule_triggered": "HighRisk+Foreign"
+  },
+  {
+    "timestamp": "2025-06-01T21:32:01Z",
+    "user_id": "u002",
+    "tx_id": "txn1002",
+    "risk_score": 0.3,
+    "country": "US",
+    "amount": 15000,
+    "is_pep": true,
+    "action": "flag",
+    "rule_triggered": "PEP+LargeTX"
+  },
+  {
+    "timestamp": "2025-06-01T21:32:02Z",
+    "user_id": "u003",
+    "tx_id": "txn1003",
+    "risk_score": 0.2,
+    "country": "US",
+    "amount": 300,
+    "is_pep": false,
+    "action": "pass",
+    "rule_triggered": "None"
+  }
+]
