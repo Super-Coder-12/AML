@@ -50,7 +50,7 @@ Transaction Type: Wire Transfer
 
 ---
 
-## 🟨 Prompt 5: Transaction Pattern Detection
+## Prompt 5: Transaction Pattern Detection
 
 **Agent Prompt:**
 > This customer has made 4 large transactions across 3 continents in 30 days.  
@@ -61,7 +61,7 @@ Transaction Type: Wire Transfer
 
 ---
 
-## 🟥 Prompt 6: Final Risk Assessment
+## Prompt 6: Final Risk Assessment
 
 **Agent Summary:**
 
@@ -80,7 +80,7 @@ Criteria Triggered:
 
 ---
 
-## 🔐 Prompt 7: Access Control Simulation
+## Prompt 7: Access Control Simulation
 
 **Agent Prompt:**
 > Current user role: `Junior Analyst`  
