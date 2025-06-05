@@ -56,8 +56,8 @@ Transaction Type: Wire Transfer
 > This customer has made 4 large transactions across 3 continents in 30 days.  
 > Matches typology: "Smurfing + Layering"
 
-- ✅ Confirm suspicious pattern → Increase risk score  
-- ❌ Unusual, but no match → Monitor only
+-  Confirm suspicious pattern → Increase risk score  
+-  Unusual, but no match → Monitor only
 
 ---
 
@@ -75,8 +75,8 @@ Criteria Triggered:
  **Agent Prompt:**
 > Generate alert and escalate?
 
-- ✅ Yes → `Alert ID: AML_2025_0401_002`  
-- ❌ No → Log internally only
+- Yes → `Alert ID: AML_2025_0401_002`  
+- No → Log internally only
 
 ---
 
@@ -86,7 +86,7 @@ Criteria Triggered:
 > Current user role: `Junior Analyst`  
 > View full alert trace?
 
-- ✅ No → Partial Access (summary only)  
-- 🧑‍💼 Compliance Officer → Full Access Granted
+- No → Partial Access (summary only)  
+- Compliance Officer → Full Access Granted
 
 ---
