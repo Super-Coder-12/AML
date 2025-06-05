@@ -8,7 +8,59 @@ This prompt chain simulates how an intelligent AML agent evaluates a transaction
 
 **User Input:**
 Amount: $48,000
+
 Origin: Cayman Islands
+
 Receiving Account: Company registered 2 months ago
+
 Customer ID: CUST_09423
+
 Transaction Type: Wire Transfer
+
+---
+
+## 🟨 Prompt 2: Amount Check
+
+**Agent Prompt:**
+> Is the amount greater than $10,000?
+
+- ✅ Yes → Proceed to risk country check  
+- ❌ No → Flag as Low Risk (no escalation)
+
+---
+
+## 🟨 Prompt 3: Country Risk Check
+
+**Agent Prompt:**
+> Is "Cayman Islands" considered a high-risk jurisdiction?
+
+- ✅ Yes → Increase risk weight  
+- ❌ No → Decrease risk weight
+
+---
+
+## 🟨 Prompt 4: Beneficiary Trustworthiness
+
+**Agent Prompt:**
+> Receiving company was registered only 2 months ago.  
+> Is this beneficiary considered unverified?
+
+- ✅ Yes → Add to risk score  
+- ❌ No → Proceed with moderate risk level
+
+---
+
+## 🟨 Prompt 5: Transaction Pattern Detection
+
+**Agent Prompt:**
+> This customer has made 4 large transactions across 3 continents in 30 days.  
+> Matches typology: "Smurfing + Layering"
+
+- ✅ Confirm suspicious pattern → Increase risk score  
+- ❌ Unusual, but no match → Monitor only
+
+---
+
+## 🟥 Prompt 6: Final Risk Assessment
+
+**Agent Summary:**
